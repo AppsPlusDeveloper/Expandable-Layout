@@ -62,14 +62,14 @@ Horizontal:
  android:padding="8dp"
  android:background="#E3E9F5"
  android:gravity="center_horizontal|center_vertical"
- android:orientation="vertical"
+ android:orientation="horizontal"
  app:el_expanded="false">
    <TextView
     android:id="@+id/textview1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="8dp"
-    android:text="Expanded Layout v"
+    android:text="Expanded Layout h"
     android:textSize="20sp"
     android:textColor="#000000" />
      <TextView
