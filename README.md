@@ -1,7 +1,7 @@
 </br><b>Expandable-Layout</b> Es un sistema que te permitira crear menús ocultos que con un click se mostraran con una animación, asi como se puede expandir se puede ocultar nuevamente.
     </br> </br>
     
-  <img src="./Preview/preview1.gif" width=300 title="Screen">
+<img src="./Preview/preview1.gif" width=300 title="Screen">
     
  ## Importación
  
@@ -50,11 +50,11 @@ Crea un ExpandableLayout con XML Vertical:
 			android:textSize="12sp"
 			android:textColor="#000000" />
 	</com.my.newproject2.ExpandableLayout>
-	```
+```
 	
 Horizontal:
 	
-	```xml
+```xml
 	<com.my.newproject2.ExpandableLayout
 		android:id="@+id/expandedLayouth"
 		android:layout_width="match_parent"
@@ -80,7 +80,7 @@ Horizontal:
 			android:text="App + Developer"
 			android:textSize="12sp"
 			android:textColor="#000000" />
-			```
+```
 			
 ## Funciones
 
