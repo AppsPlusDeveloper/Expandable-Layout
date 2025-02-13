@@ -24,62 +24,63 @@ public class ExpandableLayout extends LinearLayout {
 Crea un ExpandableLayout con XML Vertical:
 
 ```xml
-<com.my.newproject2.ExpandableLayout
-		android:id="@+id/expandedLayout"
-		android:layout_width="match_parent"
-		android:layout_height="180dp"
-		android:padding="8dp"
-		android:background="#E3E9F5"
-		android:gravity="center_horizontal|center_vertical"
-		android:orientation="vertical"
-		app:el_expanded="true">
-		<TextView
-			android:id="@+id/textview1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="Expanded Layout v"
-			android:textSize="20sp"
-			android:textColor="#000000" />
-		<TextView
-			android:id="@+id/textview2"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="App + Developer"
-			android:textSize="12sp"
-			android:textColor="#000000" />
-	</com.my.newproject2.ExpandableLayout>
+<your.package.ExpandableLayout
+ android:id="@+id/expandedLayout"
+ android:layout_width="match_parent"
+ android:layout_height="180dp"
+ android:padding="8dp"
+ android:background="#E3E9F5"
+ android:gravity="center_horizontal|center_vertical"
+ android:orientation="vertical"
+ app:el_expanded="false">
+   <TextView
+    android:id="@+id/textview1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:text="Expanded Layout v"
+    android:textSize="20sp"
+    android:textColor="#000000" />
+     <TextView
+      android:id="@+id/textview2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="App + Developer"
+      android:textSize="12sp"
+      android:textColor="#000000" />
+</your.package.ExpandableLayout>
 ```
 	
 Horizontal:
-	
+
 ```xml
-	<com.my.newproject2.ExpandableLayout
-		android:id="@+id/expandedLayouth"
-		android:layout_width="match_parent"
-		android:layout_height="180dp"
-		android:padding="8dp"
-		android:background="#E3E9F5"
-		android:gravity="center_horizontal|center_vertical"
-		android:orientation="horizontal"
-		app:el_expanded="true">
-		<TextView
-			android:id="@+id/textview3"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="Expanded Layout v"
-			android:textSize="20sp"
-			android:textColor="#000000" />
-		<TextView
-			android:id="@+id/textview4"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="App + Developer"
-			android:textSize="12sp"
-			android:textColor="#000000" />
+<your.package.ExpandableLayout
+ android:id="@+id/expandedLayout"
+ android:layout_width="match_parent"
+ android:layout_height="180dp"
+ android:padding="8dp"
+ android:background="#E3E9F5"
+ android:gravity="center_horizontal|center_vertical"
+ android:orientation="vertical"
+ app:el_expanded="false">
+   <TextView
+    android:id="@+id/textview1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:text="Expanded Layout v"
+    android:textSize="20sp"
+    android:textColor="#000000" />
+     <TextView
+      android:id="@+id/textview2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:text="App + Developer"
+      android:textSize="12sp"
+      android:textColor="#000000" />
+</your.package.ExpandableLayout>
 ```
 			
 ## Funciones
@@ -103,13 +104,13 @@ Supongamos que tienes un botón y que al precionarlo verifique si esta expandido
 
 ```java
 myButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				if (expandedLayout.isExpanded()) {
-					expandedLayout.collapse();
-				} else {
-					expandedLayout.expand();
-				}
-			}
-		});
+  @Override
+  public void onClick(View _view) {
+    if (expandedLayout.isExpanded()) {
+expandedLayout.collapse();
+    } else {
+expandedLayout.expand();
+    }
+}
+});
 ```
